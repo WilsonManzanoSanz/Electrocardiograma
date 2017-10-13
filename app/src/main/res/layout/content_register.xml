@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wilsonmanzano.electrocardiograma.RegisterActivity"
+    tools:showIn="@layout/activity_register"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombres"
+            android:textColor="#292929"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Escribe tus nombres" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/textApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apellidos"
+            android:textColor="#292929"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Escribe tus apellidos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/textEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textColor="#292929"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textView"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Digita tu edad" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:id="@+id/textTipodePersona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de persona: "
+            android:textColor="#292929"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/CheckDeportista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural"
+        android:textColor="#646464"
+        android:layout_marginTop="15sp"/>
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/CheckNatural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deportista"
+        android:textColor="#646464" />
+
+
+</LinearLayout>
